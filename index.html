@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gym Tracker</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="manifest" href="./manifest.json" />
-  <meta name="theme-color" content="#0f172a" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym MVP</title>
+<link rel="stylesheet" href="./styles.css">
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0f172a">
 </head>
 <body>
-  <div id="app">
-    <h1>Gym Tracker</h1>
-    <button onclick="test()">Probar App</button>
-  </div>
-  <script src="./app.js"></script>
+
+<div id="app"></div>
+
+<nav class="nav">
+<button onclick="nav('home')">Inicio</button>
+<button onclick="nav('train')">Entrenar</button>
+<button onclick="nav('history')">Historial</button>
+<button onclick="nav('settings')">Ajustes</button>
+</nav>
+
+<script src="./app.js"></script>
 </body>
 </html>
